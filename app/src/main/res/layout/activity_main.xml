@@ -175,7 +175,7 @@
             android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="5.4"
+            android:layout_weight="6"
             android:width="100dp"
             android:height="100dp"
             android:text="RESULT"

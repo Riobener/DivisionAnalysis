@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.number0:
                 if(numField.getText()==""){
-                    toast = Toast.makeText(getApplicationContext(),"Нельзя начинать число с нуля!!!",Toast.LENGTH_LONG);
+                    toast = Toast.makeText(getApplicationContext(),"Нельзя начинать число с нуля!!!",Toast.LENGTH_SHORT);
                     toast.show();
                 }else{
                     numField.setText(numField.getText()+ num0.getText().toString());
@@ -89,9 +89,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 numField.setText("");
                 break;
             case R.id.result:
-                intent.putExtra("con",Integer.parseInt(numField.getText().toString()));
-                startActivity(intent);
-                break;
+                if(numField.getText()=="") {
+                    toast = Toast.makeText(getApplicationContext(), "Не оставляйте поле ввода пустым!", Toast.LENGTH_SHORT);
+                    toast.show();
+                }else{
+                    intent.putExtra("con",Integer.parseInt(numField.getText().toString()));
+                    startActivity(intent);
+                    break;
+
+                }
 
         }
     }
