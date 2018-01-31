@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="riobener.divisionanalysis.MainActivity"
+    android:id="@+id/start"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/numbers"
+        >
+
+        <TextView
+            android:id="@+id/MainField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignBottom="@+id/Clear"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignTop="@+id/Clear"
+            android:layout_toStartOf="@+id/Clear"
+            android:background="@color/Dark"
+            android:gravity="center"
+            android:hint="Enter the number"
+
+
+            android:textAppearance="@style/Base.V7.Widget.AppCompat.EditText"
+            android:layout_weight="1.5"
+            android:maxLength="8"
+            android:textColor="@color/White"
+            android:textColorHighlight="@color/White"
+            android:textColorHint="@color/White"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_alignParentEnd="true"
+
+            android:width="100dp"
+            android:height="100dp"
+            android:text="C"
+            android:textSize="30dp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/numbers2"
+    android:id="@+id/numbers">
+    <Button
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="100dp"
+        android:width="100dp"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        android:text="1" />
+    <Button
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:width="100dp"
+        android:height="100dp"
+        android:text="2"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/number3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="100dp"
+        android:width="100dp"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:text="3" />
+</LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/numbers3"
+    android:id="@+id/numbers2">
+    <Button
+        android:id="@+id/number4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="100dp"
+        android:width="100dp"
+        android:textSize="30dp"
+        android:layout_weight="1"
+        android:text="4" />
+    <Button
+        android:id="@+id/number5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:width="100dp"
+        android:height="100dp"
+        android:text="5"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/number6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="100dp"
+        android:width="100dp"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:text="6" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/numbers4"
+
+        android:id="@+id/numbers3">
+
+        <Button
+            android:id="@+id/number7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:height="100dp"
+            android:text="7"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/number8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:height="100dp"
+            android:text="8"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/number9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:width="100dp"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:text="9" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/numbers4">
+
+        <Button
+            android:id="@+id/number0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:height="100dp"
+            android:text="0"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.4"
+            android:width="100dp"
+            android:height="100dp"
+            android:text="RESULT"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
